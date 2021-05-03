@@ -1,0 +1,38 @@
+@charset "UTF-8";
+
+h1 {
+	margin: auto;
+	border: 2px solid;
+	border-color: blue;
+	width: 35%;
+	margin-bottom: 50px; 
+}
+
+table {
+	width: 50%;
+}
+
+table input[type=text] {
+	width: 600px;
+	height: 25px;
+	background-color: white;
+	font-family: fantasy;
+	font-size: 25px;
+	color: black;
+}
+
+input[type=submit] {
+	width: 65px;
+	font-size: 25px;
+}
+
+img{
+	width: 25px;
+	height: 25px;
+}
+
+button{
+	width: 200px;
+	height: 60px;
+	font-size: 25px;
+}

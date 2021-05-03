@@ -1,0 +1,35 @@
+apply plugin: 'java'
+apply plugin: 'eclipse-wtp'
+// Apply the application plugin to add support for building an application
+apply plugin: 'war'
+// In this section you declare where to find the dependencies of your project
+repositories {
+    // Use jcenter for resolving your dependencies.
+    // You can declare any Maven/Ivy/file repository here.
+    mavenCentral()
+    mavenLocal()
+    jcenter()
+}
+
+dependencies {
+    // This dependency is found on compile classpath of this component and consumers.
+    //hibernate dependencies
+    compile  'org.hibernate:hibernate-core:5.3.2.Final'
+	compile 'org.hibernate:hibernate-validator:6.0.11.Final'
+	
+	//postgresql dependencies
+	compile group: 'org.postgresql', name: 'postgresql', version: '42.2.4'
+	
+	//guice dependencies
+	compile 'com.google.inject:guice:4.2.0'
+	
+	//resteasy dependencies
+	compile group: 'org.jboss.resteasy', name: 'resteasy-jaxrs', version: '3.6.0.Final'
+	compile group: 'org.jboss.resteasy', name: 'resteasy-guice', version: '3.6.0.Final'
+	
+	//jpa guice dependencies
+	compile group: 'com.google.inject.extensions', name: 'guice-persist', version: '4.2.0'
+	
+	//java servlet dependencies
+	providedCompile group: 'javax.servlet', name: 'javax.servlet-api', version: '4.0.1'
+}
